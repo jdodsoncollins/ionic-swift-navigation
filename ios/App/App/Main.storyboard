@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kKR-In-kpK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="CpE-MQ-aw2">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="kKR-In-kpK" customClass="MainViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O6H-ic-de3"/>
+                        <viewControllerLayoutGuide type="bottom" id="ehf-Qc-YHn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oRx-nr-aUj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDg-Yf-RYI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Native View" id="rHk-hE-DZ5">
+                                        <barButtonItem key="leftBarButtonItem" title="Go To Ionic" id="VN6-ZH-Pgi">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Ajf-CH-ibe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="rJv-Uf-03w" customClass="MainViewControlle">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Nh-dp-LOD">
+                                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Other"/>
+                                                <connections>
+                                                    <action selector="someButton:" destination="kKR-In-kpK" eventType="touchUpInside" id="nvH-IO-kHb"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hDg-Yf-RYI" firstAttribute="leading" secondItem="oRx-nr-aUj" secondAttribute="leading" id="EmA-56-GSh"/>
+                            <constraint firstAttribute="trailing" secondItem="hDg-Yf-RYI" secondAttribute="trailing" id="jUC-fY-Vdj"/>
+                            <constraint firstItem="hDg-Yf-RYI" firstAttribute="top" secondItem="O6H-ic-de3" secondAttribute="bottom" id="onJ-Vm-ge9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVt-SB-ndu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-89" y="-9"/>
+        </scene>
+        <!--Bridge View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CAPBridgeViewController" customModule="Capacitor" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="-9"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,7 @@
+{
+  "name": "awesome-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "awesome-app",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
